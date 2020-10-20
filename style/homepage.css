@@ -12,7 +12,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
   font-family: Hind, Arial;
   font-size: 14px;
   height: 3.7em;
@@ -406,7 +405,7 @@ nav ul li a {
   color: white;
   font-family: Hind;
   font-size: 34px;
-  left: 8.5em;
+  left: 8.3em;
   line-height: 1.2;
   position: absolute;
   top: 7em;
@@ -436,6 +435,160 @@ nav ul li a {
   color: white;
   font-weight: bold;
   margin-top: 2em;
-  padding: 1.3em 3.6em 1.3em 3.6em;
+  height: 3.8em;
+  width: 13.5em;
+}
+
+.first-row {
+  height: 300px;
+  width: 356px;
+  margin-bottom: 1em;
+}
+
+.second-row {
+  height: 300px;
+  width: 730px;
+}
+
+.boards-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: item1;
+}
+
+.for-sale-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: item2;
+}
+
+.men-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: item3;
+}
+
+.accessories-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: item4;
+}
+
+.men-clothing-p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: item5;
+}
+
+.new-arrival-p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: item6;
+}
+
+.products-collection {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "item1 item2 item3 item4" "item5 item5 item6 item6";
+  margin-left: 1.2em;
+  margin-top: 1.2em;
+  cursor: pointer;
+}
+
+.boards-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 9.6em;
+  margin-top: 17.5em;
+  width: 10.5em;
+}
+
+.for-sale-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 38.5em;
+  margin-top: 17.5em;
+  width: 8.8em;
+}
+
+.men-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 66.8em;
+  margin-top: 17.5em;
+  width: 8em;
+}
+
+.accessories-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 92.4em;
+  margin-top: 17.5em;
+  width: 13.5em;
+}
+
+.men-clothing-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 16.9em;
+  margin-top: 17.4em;
+  width: 23.7em;
+}
+
+.new-arrival-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  left: 72.3em;
+  margin-top: 17.4em;
+  width: 25.5em;
+}
+
+.boards-p:hover > .boards-btn,
+.for-sale-p:hover > .for-sale-btn,
+.men-p:hover > .men-btn,
+.accessories-p:hover > .accessories-btn,
+.men-clothing-p:hover > .men-clothing-btn,
+.new-arrival-p:hover > .new-arrival-btn {
+  background-color: #b004e2;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=homepage.css.map */
