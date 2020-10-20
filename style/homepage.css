@@ -401,4 +401,41 @@ nav ul li a {
   background-color: #fff;
   border: none;
 }
-/*# sourceMappingURL=navbar.css.map */
+
+.quote {
+  color: white;
+  font-family: Hind;
+  font-size: 34px;
+  left: 8.5em;
+  line-height: 1.2;
+  position: absolute;
+  top: 7em;
+}
+
+.quote p {
+  line-height: 2;
+}
+
+.quote h1 {
+  line-height: 1;
+}
+
+.carousel {
+  height: 93vh;
+  background-image: url("../images/mainpage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop-now-btn {
+  background-color: #08da97;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1.3em 3.6em 1.3em 3.6em;
+}
+/*# sourceMappingURL=homepage.css.map */

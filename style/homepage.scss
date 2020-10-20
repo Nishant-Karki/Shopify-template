@@ -1,0 +1,41 @@
+@import "./navbar.scss";
+
+@mixin btn($color) {
+  background-color: $color;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.quote {
+  color: white;
+  font-family: Hind;
+  font-size: 34px;
+  left: 8.5em;
+  line-height: 1.2;
+  position: absolute;
+  top: 7em;
+
+  p {
+    line-height: 2;
+  }
+  h1 {
+    line-height: 1;
+  }
+}
+
+.carousel {
+  height: 93vh;
+  background-image: url("../images/mainpage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop-now-btn {
+  @include btn($color: $light-green);
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1.3em 3.6em 1.3em 3.6em;
+}
