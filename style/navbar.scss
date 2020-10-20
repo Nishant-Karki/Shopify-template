@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+@import "./colors.scss";
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin badge($background-color) {
+  background-color: $background-color;
+  border-radius: 4px;
+  padding: 0 5px 0 5px;
+  margin: 4px;
+  font-size: 12px;
+  color: $white;
+}
+
+@mixin sub-menu($display) {
+  display: none;
+  position: absolute;
+  top: 3em;
+  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: $white;
+  padding-left: 3em;
+
+  ul {
+    display: $display;
+    grid-template-columns: repeat(4, 1fr);
+
+    li {
+      margin: 0;
+      margin-bottom: 3px;
+
+      ul {
+        display: inline;
+        padding-top: 1em;
+
+        li:nth-child(1) {
+          padding-top: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  @include flex;
+  height: 3.7em;
+  font-family: Hind, Arial;
+  font-size: 14px;
+  padding-left: 10em;
+
+  ul {
+    @include flex;
+
+    li {
+      list-style: none;
+      margin-left: 6%;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}
+
+.icons {
+  ul {
+    @include flex;
+    margin: 0 13em 0 39em;
+
+    li {
+      margin-left: 2em;
+    }
+  }
+}
+
+.sub-menu-home,
+.sub-menu-shop,
+.sub-menu-snowboards {
+  @include sub-menu($display: grid);
+  left: 12em;
+  max-width: 81.5em;
+  min-height: 18em;
+}
+
+.sub-menu-pages {
+  @include sub-menu($display: inline);
+  left: 27em;
+  min-width: 18em;
+  min-height: 13em;
+  padding-top: 2.2em;
+}
+
+.sub-menu-blog {
+  @include sub-menu($display: inline);
+  left: 32.3em;
+  min-width: 16.5em;
+  min-height: 19em;
+  padding-top: 2.2em;
+}
+
+.sub-menu-portfolio {
+  @include sub-menu($display: inline);
+  left: 36.8em;
+  min-width: 16.5em;
+  min-height: 19em;
+  padding-top: 2.2em;
+}
+
+.sub-menu-snowboards {
+  ul {
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+  }
+}
+
+.sub-menu-buy-theme {
+  @include sub-menu($display: inline);
+  left: 52em;
+  min-width: 17em;
+  min-height: 7em;
+  padding-top: 2.2em;
+}
+
+.home:hover ~ .sub-menu-home {
+  display: grid;
+}
+
+.shop:hover ~ .sub-menu-shop {
+  display: grid;
+}
+
+.pages:hover ~ .sub-menu-pages {
+  display: inline;
+}
+
+.blog:hover ~ .sub-menu-blog {
+  display: inline;
+}
+
+.portfolio:hover ~ .sub-menu-portfolio {
+  display: inline;
+}
+
+.snowboards:hover ~ .sub-menu-snowboards {
+  display: grid;
+}
+
+.buy-theme:hover ~ .sub-menu-buy-theme {
+  display: inline;
+}
+
+.sub-menu-sub-dropdown {
+  display: none;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 1.5em;
+  left: 17em;
+  background-color: $white;
+  padding-top: 0.6em;
+  padding-left: 1.5em;
+  min-width: 18em;
+  min-height: 6.5em;
+}
+
+.sub-dropdown:hover ~ .sub-menu-sub-dropdown {
+  display: inline;
+}
+
+//badges
+.badge-yellow {
+  @include badge($background-color: $yellow-dark);
+}
+
+.badge-red {
+  @include badge($background-color: $red);
+}
+
+.badge-blue {
+  @include badge($background-color: $skyblue);
+}
+
+.badge-green {
+  @include badge($background-color: $light-green);
+}
+
+.sale-badge {
+  position: absolute;
+  left: 12em;
+  top: 1em;
+}
+
+.sub-menu-snowitems-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em 0.5em 0;
+}
+
+.sub-menu-special {
+  display: flex;
+  position: relative;
+}
+
+.sub-menu-products {
+  height: 125px;
+  width: 125px;
+  margin-left: 0.8em;
+  margin-top: 0;
+}
+
+.sub-menu-items {
+  margin: 0.5em 2em 0 0.5em;
+}
+
+.arrow-button {
+  border: none;
+  background-color: $white;
+}
