@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
-*,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -401,6 +395,102 @@ nav ul li a {
   border: none;
 }
 
+.social-media {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3.8em;
+  background-color: #b004e2;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.form-input {
+  border: none;
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 2.8em;
+  margin-left: -13em;
+  padding-left: 1em;
+  position: relative;
+  width: 34em;
+}
+
+.social-media-icons {
+  color: #fff;
+}
+
+.social-media-icons i {
+  margin-left: 1.3em;
+}
+
+.other-info {
+  background-color: #f7f8fa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  min-height: 12em;
+  padding: 3.2em 10em 2em 10em;
+  color: grey;
+}
+
+.other-info b {
+  color: #000;
+}
+
+.other-info ul {
+  list-style: none;
+}
+
+.other-info ul li {
+  font-size: 14px;
+  margin-right: 2em;
+  padding-top: 0.5em;
+}
+
+.about-info {
+  font-size: 14px;
+  margin-right: 3em;
+  padding-top: 0.5em;
+}
+
+.categories {
+  padding-bottom: 10em;
+}
+
+.page-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 12em 2em 10em;
+}
+
+.payment-options-logo {
+  height: 1.2em;
+  margin-left: 1em;
+}
+
+*,
+body {
+  font-family: Hind, Arial;
+  margin: 0;
+  padding: 0;
+}
+
 .quote {
   color: white;
   font-family: Hind;
@@ -590,5 +680,18 @@ nav ul li a {
   background-color: #b004e2;
   color: white;
   cursor: pointer;
+}
+
+.join-us-btn {
+  background-color: #2267d8;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  height: 2.8em;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: #fff;
+  position: absolute;
+  width: 8.5em;
 }
 /*# sourceMappingURL=homepage.css.map */

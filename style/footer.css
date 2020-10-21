@@ -1,0 +1,65 @@
+.social-media {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3.8em;
+  background-color: #b004e2;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.form-input {
+  border: none;
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  height: 2.6em;
+  margin-left: -6em;
+  padding-left: 1em;
+  position: relative;
+  width: 38em;
+}
+
+.join-us-btn {
+  height: 2.9em;
+  border-bottom-left-radius: none;
+  border-top-left-radius: none;
+  position: absolute;
+  width: 6.5em;
+}
+
+.social-media-icons {
+  color: white;
+}
+
+.social-media-icons i {
+  margin-left: 1.3em;
+}
+
+.other-info {
+  background-color: lightgrey;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  min-height: 16em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.page-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+/*# sourceMappingURL=footer.css.map */

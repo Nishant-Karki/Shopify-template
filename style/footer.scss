@@ -1,0 +1,72 @@
+.social-media {
+  align-items: center;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  height: 3.8em;
+  background-color: #b004e2;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+.form-input {
+  border: none;
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 2.8em;
+  margin-left: -13em;
+  padding-left: 1em;
+  position: relative;
+  width: 34em;
+}
+
+.social-media-icons {
+  color: $white;
+  i {
+    margin-left: 1.3em;
+  }
+}
+
+.other-info {
+  background-color: $light-grey;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 12em;
+  padding: 3.2em 10em 2em 10em;
+  color: grey;
+
+  b {
+    color: $black;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 14px;
+      margin-right: 2em;
+      padding-top: 0.5em;
+    }
+  }
+}
+.about-info {
+  font-size: 14px;
+  margin-right: 3em;
+  padding-top: 0.5em;
+}
+
+.categories {
+  padding-bottom: 10em;
+}
+.page-end {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 2em 12em 2em 10em;
+}
+
+.payment-options-logo {
+  height: 1.2em;
+  margin-left: 1em;
+}

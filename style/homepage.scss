@@ -1,4 +1,5 @@
 @import "./navbar.scss";
+@import "footer.scss";
 
 @mixin btn($color) {
   background-color: $color;
@@ -13,6 +14,14 @@
   height: 3.5em;
   opacity: 0.9;
   position: absolute;
+}
+
+*,
+body {
+  font-family: Hind, Arial;
+
+  margin: 0;
+  padding: 0;
 }
 
 .quote {
@@ -144,4 +153,14 @@
   background-color: $purple;
   color: white;
   cursor: pointer;
+}
+
+.join-us-btn {
+  @include btn($color: $blue);
+  height: 2.8em;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: $white;
+  position: absolute;
+  width: 8.5em;
 }
