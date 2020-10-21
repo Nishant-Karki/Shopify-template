@@ -155,6 +155,46 @@ body {
   cursor: pointer;
 }
 
+.brands {
+  margin: 0 12em 2.1em 9.5em;
+
+  a {
+    text-decoration: none;
+
+    &:hover > .brand-img {
+      opacity: 1;
+    }
+  }
+}
+
+.brand-img {
+  margin-left: 3.6em;
+  opacity: 0.2;
+  width: 8.3em;
+}
+
+.instagram-link {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 2.5em;
+  margin-left: 0.8em;
+  text-align: center;
+
+  a {
+    color: $blue;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
 .offers {
   display: flex;
 
@@ -172,7 +212,7 @@ body {
   border-top-left-radius: 0;
   color: $white;
   position: absolute;
-  width: 8.5em;
+  width: 6.6em;
 }
 
 .offer-img-1:hover ~ .offer-btn-1,

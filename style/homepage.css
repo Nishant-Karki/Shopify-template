@@ -419,10 +419,10 @@ nav ul li a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   height: 2.8em;
-  margin-left: -13em;
+  margin-left: -10em;
   padding-left: 1em;
   position: relative;
-  width: 34em;
+  width: 40.2em;
 }
 
 .social-media-icons {
@@ -682,6 +682,46 @@ body {
   cursor: pointer;
 }
 
+.brands {
+  margin: 0 12em 2.1em 9.5em;
+}
+
+.brands a {
+  text-decoration: none;
+}
+
+.brands a:hover > .brand-img {
+  opacity: 1;
+}
+
+.brand-img {
+  margin-left: 3.6em;
+  opacity: 0.2;
+  width: 8.3em;
+}
+
+.instagram-link {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 2.5em;
+  margin-left: 0.8em;
+  text-align: center;
+}
+
+.instagram-link a {
+  color: #2267d8;
+}
+
+.instagram-link a:hover {
+  text-decoration: none;
+}
+
+.instagram-link span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .offers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,7 +744,7 @@ body {
   border-top-left-radius: 0;
   color: #fff;
   position: absolute;
-  width: 8.5em;
+  width: 6.6em;
 }
 
 .offer-img-1:hover ~ .offer-btn-1,
