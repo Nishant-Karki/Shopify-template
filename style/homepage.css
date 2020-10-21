@@ -682,6 +682,18 @@ body {
   cursor: pointer;
 }
 
+.offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offers .offer-img-1,
+.offers .offer-img-2 {
+  margin: 0.7em 0 2em 1.2em;
+  width: 730px;
+}
+
 .join-us-btn {
   background-color: #2267d8;
   border: none;
@@ -693,5 +705,60 @@ body {
   color: #fff;
   position: absolute;
   width: 8.5em;
+}
+
+.offer-img-1:hover ~ .offer-btn-1,
+.offer-img-2:hover ~ .offer-btn-2 {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offer-btn-1,
+.offer-btn-2 {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  height: 3.5em;
+  opacity: 0.9;
+  position: absolute;
+  font-weight: normal;
+  height: 8.3em;
+  margin-top: 12em;
+  position: absolute;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  width: 24.2em;
+}
+
+.offer-btn-1:hover,
+.offer-btn-2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offer-btn-1 p,
+.offer-btn-2 p {
+  font-size: 16px;
+}
+
+.offer-btn-1 p span,
+.offer-btn-2 p span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.offer-btn-1 p span span,
+.offer-btn-2 p span span {
+  color: #08da97;
+}
+
+.offer-btn-1 {
+  left: 16.5em;
+}
+
+.offer-btn-2 {
+  left: 73em;
 }
 /*# sourceMappingURL=homepage.css.map */
