@@ -267,33 +267,16 @@ nav ul li a {
   padding-top: 0.5em;
 }
 
-.home:hover ~ .sub-menu-home {
-  display: -ms-grid;
-  display: grid;
-}
-
-.shop:hover ~ .sub-menu-shop {
-  display: -ms-grid;
-  display: grid;
-}
-
-.pages:hover ~ .sub-menu-pages {
-  display: inline;
-}
-
-.blog:hover ~ .sub-menu-blog {
-  display: inline;
-}
-
-.portfolio:hover ~ .sub-menu-portfolio {
-  display: inline;
-}
-
+.home:hover ~ .sub-menu-home,
+.shop:hover ~ .sub-menu-shop,
 .snowboards:hover ~ .sub-menu-snowboards {
   display: -ms-grid;
   display: grid;
 }
 
+.pages:hover ~ .sub-menu-pages,
+.blog:hover ~ .sub-menu-blog,
+.portfolio:hover ~ .sub-menu-portfolio,
 .buy-theme:hover ~ .sub-menu-buy-theme {
   display: inline;
 }
@@ -491,12 +474,16 @@ body {
   padding: 0;
 }
 
-.quote {
+.quote,
+.parallax-heading {
   color: white;
   font-family: Hind;
+  line-height: 1.2;
+}
+
+.quote {
   font-size: 34px;
   left: 8.3em;
-  line-height: 1.2;
   position: absolute;
   top: 7em;
 }
@@ -517,7 +504,7 @@ body {
   background-size: cover;
 }
 
-.shop-now-btn {
+.shop-btn-carousel {
   background-color: #08da97;
   border: none;
   border-radius: 0.5em;
@@ -527,6 +514,26 @@ body {
   margin-top: 2em;
   height: 3.8em;
   width: 13.5em;
+}
+
+.shop-btn-carousel:hover {
+  cursor: pointer;
+}
+
+.shop-btn-parallax {
+  background-color: #b004e2;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+  height: 3.8em;
+  width: 13.5em;
+}
+
+.shop-btn-parallax:hover {
+  cursor: pointer;
 }
 
 .first-row {
@@ -682,6 +689,87 @@ body {
   cursor: pointer;
 }
 
+.trending-head {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.trending-head span {
+  font-size: 16px;
+}
+
+.trending-products {
+  min-height: 34.4em;
+  padding-top: 2.3em;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+.trending-product-detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  margin-top: 2em;
+  min-height: 10em;
+  height: 25em;
+}
+
+.trending-product-detail .trending-product-img {
+  position: relative;
+  height: 232px;
+  margin-left: 0.5em;
+  margin-top: 3.2em;
+}
+
+.product1:hover > .details {
+  position: absolute;
+  top: 10%;
+  z-index: 99;
+}
+
+.details {
+  background-color: black;
+}
+
+.product2 p {
+  position: absolute;
+  margin-top: 5em;
+  margin-left: 1.6em;
+  z-index: 1;
+}
+
+.parallax {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/parallax-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40.6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.parallax-heading {
+  font-size: 30px;
+}
+
+.parallax-heading p:nth-child(1) {
+  color: #13b380;
+  line-height: 1.5;
+}
+
+.parallax-heading p:nth-child(2) {
+  font-size: 72px;
+  font-weight: bold;
+}
+
 .brands {
   margin: 0 12em 2.1em 9.5em;
 }
@@ -711,6 +799,7 @@ body {
 
 .instagram-link a {
   color: #2267d8;
+  text-decoration: underline;
 }
 
 .instagram-link a:hover {

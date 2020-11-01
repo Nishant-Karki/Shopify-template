@@ -129,30 +129,15 @@ nav {
   padding-top: 2.2em;
 }
 
-.home:hover ~ .sub-menu-home {
-  display: grid;
-}
-
-.shop:hover ~ .sub-menu-shop {
-  display: grid;
-}
-
-.pages:hover ~ .sub-menu-pages {
-  display: inline;
-}
-
-.blog:hover ~ .sub-menu-blog {
-  display: inline;
-}
-
-.portfolio:hover ~ .sub-menu-portfolio {
-  display: inline;
-}
-
+.home:hover ~ .sub-menu-home,
+.shop:hover ~ .sub-menu-shop,
 .snowboards:hover ~ .sub-menu-snowboards {
   display: grid;
 }
 
+.pages:hover ~ .sub-menu-pages,
+.blog:hover ~ .sub-menu-blog,
+.portfolio:hover ~ .sub-menu-portfolio,
 .buy-theme:hover ~ .sub-menu-buy-theme {
   display: inline;
 }

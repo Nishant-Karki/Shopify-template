@@ -16,6 +16,19 @@
   position: absolute;
 }
 
+@mixin shop-now-btn($color) {
+  @include btn($color);
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+  height: 3.8em;
+  width: 13.5em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 *,
 body {
   font-family: Hind, Arial;
@@ -24,15 +37,18 @@ body {
   padding: 0;
 }
 
-.quote {
+.quote,
+.parallax-heading {
   color: white;
   font-family: Hind;
+  line-height: 1.2;
+}
+
+.quote {
   font-size: 34px;
   left: 8.3em;
-  line-height: 1.2;
   position: absolute;
   top: 7em;
-
   p {
     line-height: 2;
   }
@@ -49,13 +65,12 @@ body {
   background-size: cover;
 }
 
-.shop-now-btn {
-  @include btn($color: $light-green);
-  color: white;
-  font-weight: bold;
-  margin-top: 2em;
-  height: 3.8em;
-  width: 13.5em;
+.shop-btn-carousel {
+  @include shop-now-btn($color: $light-green);
+}
+
+.shop-btn-parallax {
+  @include shop-now-btn($color: $purple);
 }
 
 .first-row {
@@ -155,6 +170,79 @@ body {
   cursor: pointer;
 }
 
+.trending-head {
+  font-size: 26px;
+  line-height: 1;
+  span {
+    font-size: 16px;
+  }
+}
+.trending-products {
+  min-height: 34.4em;
+  padding-top: 2.3em;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+.trending-product-detail {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 2em;
+  min-height: 10em;
+  height: 25em;
+
+  .trending-product-img {
+    position: relative;
+    height: 232px;
+    margin-left: 0.5em;
+    margin-top: 3.2em;
+  }
+}
+.product1:hover > .details {
+  position: absolute;
+  top: 10%;
+  z-index: 99;
+}
+
+.details {
+  background-color: black;
+}
+
+.product2 {
+  p {
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 1.6em;
+    z-index: 1;
+  }
+}
+
+//parallax
+.parallax {
+  align-items: center;
+  background-image: url("../images/parallax-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 40.6em;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax-heading {
+  font-size: 30px;
+
+  p:nth-child(1) {
+    color: $green;
+    line-height: 1.5;
+  }
+
+  p:nth-child(2) {
+    font-size: 72px;
+    font-weight: bold;
+  }
+}
+
 .brands {
   margin: 0 12em 2.1em 9.5em;
 
@@ -183,6 +271,7 @@ body {
 
   a {
     color: $blue;
+    text-decoration: underline;
 
     &:hover {
       text-decoration: none;
