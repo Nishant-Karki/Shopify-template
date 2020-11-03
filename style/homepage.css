@@ -6,10 +6,16 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
   font-family: Hind, Arial;
   font-size: 14px;
   height: 3.7em;
+  overflow: hidden;
   padding-left: 10em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 nav ul {
@@ -55,10 +61,10 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 12em;
   margin-right: 20em;
-  max-width: 84em;
+  min-width: 82em;
   min-height: 18em;
 }
 
@@ -95,7 +101,7 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 27em;
   min-height: 13em;
   min-width: 18em;
@@ -130,7 +136,7 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 32.3em;
   min-height: 19em;
   min-width: 16.5em;
@@ -165,7 +171,7 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 36.8em;
   min-height: 19em;
   min-width: 16.5em;
@@ -200,7 +206,7 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 12em;
   min-height: 18em;
   max-width: 81em;
@@ -240,7 +246,7 @@ nav ul li a {
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
   left: 52em;
   min-height: 7em;
   min-width: 17em;
@@ -286,7 +292,6 @@ nav ul li a {
   position: absolute;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
   top: 1.5em;
   left: 17em;
   background-color: #fff;
@@ -496,12 +501,44 @@ body {
   line-height: 1;
 }
 
+.arrows {
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 8.8em;
+  opacity: 0.5;
+}
+
+.arrows:hover {
+  opacity: 1;
+}
+
+.next {
+  position: absolute;
+  left: 36em;
+}
+
+.prev {
+  position: absolute;
+}
+
 .carousel {
-  height: 93vh;
-  background-image: url("../images/mainpage.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  height: 46.4em;
+  overflow: hidden;
+}
+
+.carousel img {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.carousel-img {
+  width: 120%;
+  margin-left: -10em;
+  z-index: 0;
 }
 
 .shop-btn-carousel {
@@ -710,9 +747,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  margin-top: 1em;
   min-height: 10em;
-  height: 25em;
+  height: 29em;
 }
 
 .trending-product-detail .trending-product-img {

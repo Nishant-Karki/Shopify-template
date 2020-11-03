@@ -57,12 +57,45 @@ body {
   }
 }
 
+.arrows {
+  color: $white;
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 8.8em;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.next {
+  position: absolute;
+  left: 36em;
+}
+
+.prev {
+  position: absolute;
+}
 .carousel {
-  height: 93vh;
-  background-image: url("../images/mainpage.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  height: 46.4em;
+  // background-image: url("../images/mainpage.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  overflow: hidden;
+
+  img {
+    transition: 0.3s ease-out;
+  }
+}
+
+.carousel-img {
+  width: 120%;
+  margin-left: -10em;
+  z-index: 0;
 }
 
 .shop-btn-carousel {
@@ -187,9 +220,8 @@ body {
 .trending-product-detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-top: 1em;
   min-height: 10em;
-  height: 25em;
+  height: 29em;
 
   .trending-product-img {
     position: relative;

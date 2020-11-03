@@ -22,7 +22,7 @@
   padding-left: 3em;
   position: absolute;
   top: 3em;
-  z-index: 1;
+  z-index: 3;
 
   ul {
     display: $display;
@@ -46,10 +46,15 @@
 
 nav {
   @include flex;
+  background-color: $white;
   font-family: Hind, Arial;
   font-size: 14px;
   height: 3.7em;
+  overflow: hidden;
   padding-left: 10em;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 
   ul {
     @include flex;
@@ -83,7 +88,7 @@ nav {
   @include sub-menu($display: grid);
   left: 12em;
   margin-right: 20em;
-  max-width: 84em;
+  min-width: 82em;
   min-height: 18em;
 }
 
@@ -146,7 +151,6 @@ nav {
   display: none;
   position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
   top: 1.5em;
   left: 17em;
   background-color: $white;
