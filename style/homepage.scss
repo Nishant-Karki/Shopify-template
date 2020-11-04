@@ -106,6 +106,28 @@ body {
   @include shop-now-btn($color: $purple);
 }
 
+//move to top button
+.move-to-top {
+  align-items: center;
+  background-color: $blue;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+  float: right;
+  height: 4.2em;
+  justify-content: center;
+  opacity: 0.7;
+  position: sticky;
+  top: 87%;
+  width: 4em;
+  z-index: 50;
+
+  i {
+    color: $white;
+    font-size: 30px;
+  }
+}
+
 .first-row {
   height: 300px;
   width: 356px;
@@ -203,6 +225,34 @@ body {
   cursor: pointer;
 }
 
+.slide-products {
+  display: flex;
+  margin-left: 92%;
+  margin-right: 1em;
+  position: absolute;
+}
+
+.prev-product,
+.next-product {
+  background-color: $light-grey;
+  border-radius: 0.8em;
+  color: $grey;
+  cursor: pointer;
+  font-size: 25px;
+  height: 1.5em;
+  margin-right: 0.5em;
+  width: 1.5em;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    background-color: $blue;
+    color: $light-grey;
+  }
+}
+
+.next-product {
+}
+
 .trending-head {
   font-size: 26px;
   line-height: 1;
@@ -220,8 +270,8 @@ body {
 .trending-product-detail {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  min-height: 10em;
   height: 29em;
+  min-height: 10em;
 
   .trending-product-img {
     position: relative;
@@ -230,6 +280,7 @@ body {
     margin-top: 3.2em;
   }
 }
+
 .product1:hover > .details,
 .product2:hover > .details,
 .product3:hover > .details,

@@ -32,3 +32,17 @@ function next() {
   document.slide1.src = images[i];
   i < images.length - 1 ? i++ : (i = 0);
 }
+
+//move to top function
+function scroll_Top() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+//slide products
+function prev_product() {
+  console.log("prev clicked");
+}
+
+function next_product() {
+  console.log("next clicked");
+}
