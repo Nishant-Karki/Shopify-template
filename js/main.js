@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 // for image slider
 
 let i = 0;
-let images = ["../images/snowboards.jpg", "../images/mainpage.jpg"];
+let images = ["../images/mainpage.jpg", "../images/mainpage2.jpg"];
 
 const time = 6000;
 

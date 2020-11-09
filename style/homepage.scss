@@ -22,7 +22,7 @@
   font-weight: bold;
   margin-top: 2em;
   height: 3.8em;
-  width: 13.5em;
+  width: 40%;
 
   &:hover {
     cursor: pointer;
@@ -45,10 +45,10 @@ body {
 }
 
 .quote {
-  font-size: 34px;
-  left: 8.3em;
+  font-size: 2vw;
+  left: 18.5%;
   position: absolute;
-  top: 7em;
+  top: 32%;
   p {
     line-height: 2;
   }
@@ -60,19 +60,19 @@ body {
 .arrows {
   color: $white;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 3vw;
   position: absolute;
-  margin-left: 1em;
-  margin-top: 8.8em;
+  margin-left: 2%;
+  margin-top: 23%;
   opacity: 0.5;
-
+  width: 23.5%;
   &:hover {
     opacity: 1;
   }
 }
 .next {
   position: absolute;
-  left: 36em;
+  margin-left: 400%;
 }
 
 .prev {
@@ -80,13 +80,12 @@ body {
 }
 .carousel {
   position: relative;
-  height: 46.4em;
+  width: 100%;
   // background-image: url("../images/mainpage.jpg");
   // background-position: center;
   // background-repeat: no-repeat;
   // background-size: cover;
   overflow: hidden;
-
   img {
     transition: 0.3s ease-out;
   }
@@ -94,6 +93,7 @@ body {
 
 .carousel-img {
   width: 120%;
+  height: 100%;
   margin-left: -10em;
   z-index: 0;
 }
@@ -129,53 +129,35 @@ body {
 }
 
 .first-row {
-  height: 300px;
-  width: 356px;
+  height: 100%;
+  width: 100%;
   margin-bottom: 1em;
 }
 
 .second-row {
-  height: 300px;
-  width: 730px;
-}
-.boards-p {
-  grid-area: item1;
-}
-
-.for-sale-p {
-  grid-area: item2;
-}
-
-.men-p {
-  grid-area: item3;
-}
-
-.accessories-p {
-  grid-area: item4;
-}
-
-.men-clothing-p {
-  grid-area: item5;
-}
-
-.new-arrival-p {
-  grid-area: item6;
+  height: 97%;
+  width: 100%;
 }
 
 .products-collection {
-  display: grid;
-  grid-template-areas:
-    "item1 item2 item3 item4"
-    "item5 item5 item6 item6";
-  margin-left: 1.2em;
-  margin-top: 1.2em;
   cursor: pointer;
+  margin: 1.2em 1.2em 0em 1.2em;
+}
+.second-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+.first-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .boards-btn {
   @include products-btn($color: $white);
-  left: 9.6em;
-  margin-top: 17.5em;
+  left: 7.5%;
+  margin-top: 16%;
   width: 10.5em;
 }
 
@@ -261,7 +243,7 @@ body {
   }
 }
 .trending-products {
-  min-height: 30em;
+  min-height: 35em;
   padding-top: 2em;
   margin-left: 0.3em;
   text-align: center;
@@ -269,16 +251,24 @@ body {
 
 .trending-product-detail {
   display: grid;
+  grid-gap: 1em;
   grid-template-columns: repeat(6, 1fr);
-  height: 29em;
-  min-height: 10em;
 
   .trending-product-img {
     position: relative;
-    height: 232px;
+    width: 90%;
     margin-left: 0.5em;
     margin-top: 3.2em;
   }
+}
+
+.btnn {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.boards-btn {
+  position: absolute;
 }
 
 .product1:hover > .details,
@@ -349,6 +339,7 @@ body {
 
 //parallax
 .parallax {
+  width: 100%;
   align-items: center;
   background-image: url("../images/parallax-img.jpg");
   background-size: cover;
@@ -374,7 +365,7 @@ body {
 }
 
 .brands {
-  margin: 0 12em 2.1em 9.5em;
+  margin: 0 12% 2% 15%;
 
   a {
     text-decoration: none;
@@ -386,9 +377,9 @@ body {
 }
 
 .brand-img {
-  margin-left: 3.6em;
+  margin-left: 4%;
   opacity: 0.2;
-  width: 8.3em;
+  width: 10%;
 }
 
 .instagram-link {
@@ -415,12 +406,15 @@ body {
 }
 
 .offers {
-  display: flex;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  margin: 0em 1.2em 1.2em 1.2em;
 
   .offer-img-1,
   .offer-img-2 {
-    margin: 0.7em 0 2em 1.2em;
-    width: 730px;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -431,7 +425,7 @@ body {
   border-top-left-radius: 0;
   color: $white;
   position: absolute;
-  width: 6.6em;
+  width: 8%;
 }
 
 .offer-img-1:hover ~ .offer-btn-1,
@@ -473,4 +467,52 @@ body {
 
 .offer-btn-2 {
   left: 73em;
+}
+
+.new-div {
+  max-width: 100px;
+}
+
+//media queries
+@media screen and (max-width: 1024px) {
+  .trending-product-detail {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quote {
+    top: 25%;
+    left: 14%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trending-product-detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .move-to-top {
+    display: none;
+  }
+
+  .quote {
+    top: 20%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .first-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+  }
+  .quote {
+    top: 5%;
+    left: 4%;
+  }
 }

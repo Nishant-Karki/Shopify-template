@@ -11,7 +11,7 @@ nav {
   font-size: 14px;
   height: 3.7em;
   overflow: hidden;
-  padding-left: 10em;
+  padding-left: 2%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -25,6 +25,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 7%;
 }
 
 nav ul li {
@@ -38,6 +39,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+.icons {
+  margin-left: 34%;
+}
+
 .icons ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -45,11 +50,14 @@ nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 13em 0 39em;
 }
 
 .icons ul li {
-  margin-left: 2em;
+  margin-left: 30%;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .sub-menu-home,
@@ -381,5 +389,44 @@ nav ul li a {
 .arrow-button {
   background-color: #fff;
   border: none;
+}
+
+@media screen and (max-width: 1244px) {
+  nav ul {
+    margin-left: 4%;
+  }
+  .icons {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .icons {
+    margin-left: 65%;
+  }
+  .icons ul li {
+    margin-left: 60%;
+  }
+  .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 3%;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .icons {
+    margin-left: 58%;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .icons {
+    margin-left: 45%;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
